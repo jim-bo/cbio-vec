@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       - name: Push to Hugging Face Hub
-        uses: huggingface/hub-action@v0.5
+        uses: huggingface/push-to-hub-action@v0.5
         with:
           repo_id: "jim-bo/cbio-vec"
           repo_type: "space"
