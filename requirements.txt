@@ -1,0 +1,20 @@
+gradio
+langchain
+sqlalchemy
+langchain-community
+langchain-openai
+pypdf
+tiktoken
+openai
+langchain-text-splitters
+pdfplumber
+pillow
+sentence-transformers
+faiss-cpu
+spacy
+tqdm
+fastmcp
+
+# Only needed if you use --ocr
+pdf2image
+pytesseract
