@@ -1,4 +1,4 @@
-name: Sync to Hugging Face Hub
+name: Mirror to Hugging Face Hub
 
 on:
   push:
@@ -6,18 +6,15 @@ on:
       - main
 
 jobs:
-  sync-to-hub:
+  mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Push to Hugging Face Hub
-        uses: huggingface/push-to-hub-action@v0.5
+      - name: Mirror to Hugging Face Hub
+        uses: huggingface/hub-action@v2
         with:
           repo_id: "jim-bo/cbio-vec"
           repo_type: "space"
-          token: ${{ secrets.HF_TOKEN }}
-          force_push: true
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
