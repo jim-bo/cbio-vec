@@ -1,0 +1,12 @@
+# Ignore the git repository
+.git
+
+# Ignore large data
+batch_pdfs/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore GitHub Actions workflows
+.github/

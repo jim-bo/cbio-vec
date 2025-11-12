@@ -1,0 +1,18 @@
+# Development and auxiliary dependencies
+gradio
+langchain
+sqlalchemy
+langchain-community
+langchain-openai
+pypdf
+tiktoken
+openai
+langchain-text-splitters
+pdfplumber
+pillow
+spacy
+tqdm
+
+# Only needed if you use --ocr
+pdf2image
+pytesseract

@@ -1,5 +1,5 @@
-# Use an official Python runtime as a parent image
-FROM python:3.12-slim
+# Use an official PyTorch runtime as a parent image for better optimization
+FROM pytorch/manylinux-cpu:latest
 
 # Set the working directory in the container
 WORKDIR /app

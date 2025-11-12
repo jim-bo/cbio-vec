@@ -1,20 +1,5 @@
-gradio
-langchain
-sqlalchemy
-langchain-community
-langchain-openai
-pypdf
-tiktoken
-openai
-langchain-text-splitters
-pdfplumber
-pillow
+# Core requirements for the MCP server
 sentence-transformers
 faiss-cpu
-spacy
-tqdm
+numpy
 fastmcp
-
-# Only needed if you use --ocr
-pdf2image
-pytesseract
